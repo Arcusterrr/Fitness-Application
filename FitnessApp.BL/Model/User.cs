@@ -9,6 +9,7 @@ namespace FitnessApp.BL.Model
     /// <summary>
     /// Пользователь.
     /// </summary>
+    [Serializable]
     public class User
     {
         #region Свойства
@@ -35,7 +36,7 @@ namespace FitnessApp.BL.Model
         #endregion
 
         /// <summary>
-        /// Создать нового пользователя
+        /// Создать нового пользователя.
         /// </summary>
         /// <param name="name"> Имя. </param>
         /// <param name="gender"> Пол. </param>
