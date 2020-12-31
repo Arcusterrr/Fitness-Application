@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FitnessApp.BL.Model
+namespace Domain.Entities
 {
     /// <summary>
     ///  Пол
