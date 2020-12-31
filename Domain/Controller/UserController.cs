@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using FitnessApp.BL.Model;
+using Domain.Entities;
 
-namespace FitnessApp.BL.Controller
+namespace Domain.Controller
 {
     /// <summary>
     /// Контроллер пользователя.

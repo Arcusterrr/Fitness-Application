@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace FitnessApp.BL.Model
+namespace Domain.Entities
 {
     /// <summary>
     /// Пользователь.
@@ -12,28 +8,12 @@ namespace FitnessApp.BL.Model
     [Serializable]
     public class User
     {
-        #region Свойства
-        /// <summary>
-        /// Имя.
-        /// </summary>
+        public int Id { get; set; }
         public string Name { get; }
-        /// <summary>
-        /// Пол.
-        /// </summary>
         public Gender Gender { get; set; }
-        /// <summary>
-        /// Дата рождения.
-        /// </summary>
         public DateTime BirthDate { get; set; }
-        /// <summary>
-        /// Вес.
-        /// </summary>
         public double Weight { get; set; }
-        /// <summary>
-        /// Рост.
-        /// </summary>
         public double Height { get; set; }
-        #endregion
 
         public int Age
         { 
@@ -45,15 +25,7 @@ namespace FitnessApp.BL.Model
                 return age; 
             } 
         }
-
-        /// <summary>
-        /// Создать нового пользователя.
-        /// </summary>
-        /// <param name="name"> Имя. </param>
-        /// <param name="gender"> Пол. </param>
-        /// <param name="birthDate"> Дата рождения. </param>
-        /// <param name="weight"> Вес. </param>
-        /// <param name="height"> Рост. </param>
+        
         public User(string name,
                     Gender gender,
                     DateTime birthDate,
